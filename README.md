@@ -15,8 +15,8 @@
 
 This repo builds the `mgldvd/alpine-python3.12-uv` Docker image on top of `python:3.12-alpine`, adding Bash tooling and uv.
 
-- GitHub: https://github.com/Mgldvd-Docker/alpine-python3.12-uv
-- Docker Hub: https://hub.docker.com/r/mgldvd/alpine-python3.12-uv
+- **GitHub**: https://github.com/Mgldvd-Docker/alpine-python3.12-uv
+- **Docker Hub**: https://hub.docker.com/r/mgldvd/alpine-python3.12-uv
 
 ## 🧭 Overview
 
