@@ -1,6 +1,6 @@
 <!-- markdownlint-disable first-line-heading -->
 <p align="center">
-  <a href="https://hub.docker.com/r/mgldvd/alpine-python3.12-uv" target="_blank"><img src="https://raw.githubusercontent.com/Mgldvd-Docker/alpine-php85/refs/heads/master/.github/assets/mgldvd-docker-banner.png" alt="Mgldvd-Docker" height="auto" /></a>
+  <a href="https://hub.docker.com/r/mgldvd/alpine-python3.12-uv" target="_blank"><img src="https://raw.githubusercontent.com/Mgldvd-Docker/alpine-python3.12-uv/refs/heads/master/.github/assets/mgldvd-docker-banner.png" alt="Mgldvd-Docker" height="auto" /></a>
 </p>
 
 # Alpine Python 3.12 + uv Docker Image
@@ -19,6 +19,8 @@ This repo builds the `mgldvd/alpine-python3.12-uv` Docker image on top of `pytho
 - **Docker Hub**: https://hub.docker.com/r/mgldvd/alpine-python3.12-uv
 
 ## 🧭 Overview
+
+![demo](https://raw.githubusercontent.com/Mgldvd-Docker/alpine-python3.12-uv/refs/heads/master/.github/assets/video.gif)
 
 Single Dockerfile using Alpine and Python 3.12 with uv preinstalled, published by the GitHub Actions workflow on `deploy/hub`.
 
