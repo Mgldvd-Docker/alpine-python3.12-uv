@@ -1,6 +1,6 @@
 <!-- markdownlint-disable first-line-heading -->
 <p align="center">
-  <a href="https://hub.docker.com/r/mgldvd/alpine-python3.12-uv" target="_blank"><img src="[.github/assets/mgldvd-docker-banner.png](https://raw.githubusercontent.com/Mgldvd-Docker/alpine-php85/refs/heads/master/.github/assets/mgldvd-docker-banner.png)" alt="Mgldvd-Docker" height="auto" /></a>
+  <a href="https://hub.docker.com/r/mgldvd/alpine-python3.12-uv" target="_blank"><img src="https://raw.githubusercontent.com/Mgldvd-Docker/alpine-php85/refs/heads/master/.github/assets/mgldvd-docker-banner.png" alt="Mgldvd-Docker" height="auto" /></a>
 </p>
 
 # Alpine Python 3.12 + uv Docker Image
