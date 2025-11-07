@@ -1,6 +1,6 @@
 FROM python:3.12-alpine
 
-RUN apk update && apk add --no-cache \
+RUN apk add --no-cache \
     bash \
     sudo \
     curl \
@@ -8,15 +8,15 @@ RUN apk update && apk add --no-cache \
     neovim \
     coreutils
 
-RUN adduser -D -s /bin/bash master && \
-    echo 'master ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/master && \
+RUN adduser -D -u 1000 -s /bin/bash master && \
+    printf 'master ALL=(ALL) NOPASSWD:ALL\n' > /etc/sudoers.d/master && \
     chmod 0440 /etc/sudoers.d/master
 
 USER master
 WORKDIR /home/master
 
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh && \
-    echo 'source $HOME/.local/bin/env' >> ~/.bashrc
+    printf 'source $HOME/.local/bin/env\n' >> /home/master/.bashrc
 
 ENV PATH="/home/master/.local/bin:${PATH}"
 
@@ -35,7 +35,8 @@ EOF
 
 USER root
 RUN mkdir -p /app && chown -R master:master /app
+
 USER master
 WORKDIR /app
 
-CMD ["/bin/bash"]
+CMD ["sleep", "infinity"]
