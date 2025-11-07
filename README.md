@@ -105,6 +105,46 @@ Run the container to verify the build:
 docker run --rm -it -v "$PWD:/app" mgldvd/alpine-python3.12-uv:local bash
 ```
 
+### 🐳 Docker Compose
+
+Use the bundled [compose.yml](https://raw.githubusercontent.com/Mgldvd-Docker/alpine-python3.12-uv/refs/heads/master/Dockerfile) to launch an interactive shell with your local `app/` directory mounted into the container:
+
+```sh
+mkdir app
+```
+
+```sh
+wget https://raw.githubusercontent.com/Mgldvd-Docker/alpine-python3.12-uv/refs/heads/master/compose.yml
+```
+
+or create file: `compose.yml`
+
+```yml
+services:
+    app:
+        image: mgldvd/alpine-python3.12-uv
+        command: bash
+        volumes:
+            - ./app:/app
+        stdin_open: true
+        tty: true
+        restart: "no"
+```
+
+```sh
+docker compose run --rm app
+```
+
+To keep the container running in the background instead, start it detached and exec into it when needed:
+
+```sh
+docker compose up -d
+docker compose exec app bash
+```
+
+<br>
+<br>
+
 ## 📤 Publishing Workflow
 
 The GitHub Actions workflow at `.github/workflows/docker-publish.yml` automates image publication. It performs the following steps:

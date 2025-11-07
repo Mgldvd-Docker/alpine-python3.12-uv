@@ -1,0 +1,9 @@
+services:
+    app:
+        image: mgldvd/alpine-python3.12-uv
+        command: bash
+        volumes:
+            - ./app:/app
+        stdin_open: true
+        tty: true
+        restart: "no"
