@@ -107,7 +107,7 @@ docker run --rm -it -v "$PWD:/app" mgldvd/alpine-python3.12-uv:local bash
 
 ### 🐳 Docker Compose
 
-Use the bundled [compose.yml](https://raw.githubusercontent.com/Mgldvd-Docker/alpine-python3.12-uv/refs/heads/master/Dockerfile) to launch an interactive shell with your local `app/` directory mounted into the container:
+Use the bundled [compose.yml](https://raw.githubusercontent.com/Mgldvd-Docker/alpine-python3.12-uv/refs/heads/master/compose.yml) to launch an interactive shell with your local `app/` directory mounted into the container:
 
 ```sh
 mkdir app
