@@ -51,7 +51,7 @@ Single Dockerfile using Alpine and Python 3.12 with uv preinstalled, published b
 ### 🚀 Quick start
 
 ```sh
-docker run --rm -it -v "$PWD:/app" mgldvd/alpine-python3.12-uv
+docker run --rm -it -v "$PWD:/app" mgldvd/alpine-python3.12-uv bash
 ```
 
 ### 🧪 Python requests example
@@ -93,14 +93,16 @@ Clone the project and build the image using the provided Dockerfile:
 git clone https://github.com/Mgldvd-Docker/alpine-python3.12-uv.git
 
 cd alpine-python3.12-uv
+```
 
+```sh
 docker build -t mgldvd/alpine-python3.12-uv:local .
 ```
 
 Run the container to verify the build:
 
 ```sh
-docker run --rm -it -v "$PWD:/app" mgldvd/alpine-python3.12-uv:local
+docker run --rm -it -v "$PWD:/app" mgldvd/alpine-python3.12-uv:local bash
 ```
 
 ## 📤 Publishing Workflow

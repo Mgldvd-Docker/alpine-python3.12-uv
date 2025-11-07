@@ -22,9 +22,10 @@ ENV PATH="/home/master/.local/bin:${PATH}"
 
 RUN cat << 'EOF' >> /home/master/.bashrc
 export PS1="\n\
-\[\033[38;2;49;94;146m\]▍\
-\[\033[38;2;255;95;71m\]▍\
-\[\033[38;2;255;182;53m\]▍\
+\[\033[38;2;255;249;143m\] \w\n\
+\[\033[38;2;49;94;146m\] ⏹\
+\[\033[38;2;255;95;71m\]⏹\
+\[\033[38;2;255;182;53m\]⏹\
 \[\033[0m\] \
 \[\033[38;2;120;150;255m\]python3.12-uv \
 \[\033[38;2;140;170;255m\]❱ \
@@ -35,6 +36,7 @@ EOF
 
 USER root
 RUN mkdir -p /app && chown -R master:master /app
+RUN chown -R master:master /home/master
 
 USER master
 WORKDIR /app
