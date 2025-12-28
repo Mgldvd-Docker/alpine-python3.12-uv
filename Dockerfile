@@ -6,7 +6,8 @@ RUN apk add --no-cache \
     curl \
     ca-certificates \
     neovim \
-    coreutils
+    coreutils \
+    git
 
 RUN adduser -D -u 1000 -s /bin/bash master && \
     printf 'master ALL=(ALL) NOPASSWD:ALL\n' > /etc/sudoers.d/master && \
