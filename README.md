@@ -32,6 +32,7 @@ Single Dockerfile using Alpine and Python 3.12 with uv preinstalled, published b
 - `ca-certificates`
 - `neovim`
 - `coreutils`
+- `git`
 
 ### 🔧 Added tooling
 
@@ -85,6 +86,9 @@ PY
 uv run main.py
 ```
 
+<br>
+<br>
+
 ## 🏗️ Building Locally
 
 Clone the project and build the image using the provided Dockerfile:
@@ -104,6 +108,18 @@ Run the container to verify the build:
 ```sh
 docker run --rm -it -v "$PWD:/app" mgldvd/alpine-python3.12-uv:local bash
 ```
+
+### 🏗️ Building Locally (python 3.11)
+
+```sh
+# build
+docker build -t mgldvd/alpine-python3.11-uv:local -f Dockerfile.python3-11 .
+# run
+docker run --rm -it -v "$PWD:/app" mgldvd/alpine-python3.11-uv:local bash
+```
+
+<br>
+<br>
 
 ### 🐳 Docker Compose
 

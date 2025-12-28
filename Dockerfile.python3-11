@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM python:3.11-alpine
 
 RUN apk add --no-cache \
     bash \
@@ -8,6 +8,8 @@ RUN apk add --no-cache \
     neovim \
     coreutils \
     git
+
+RUN python -m pip install --upgrade pip
 
 RUN adduser -D -u 1000 -s /bin/bash master && \
     printf 'master ALL=(ALL) NOPASSWD:ALL\n' > /etc/sudoers.d/master && \
@@ -28,7 +30,7 @@ export PS1="\n\
 \[\033[38;2;255;95;71m\]⏹\
 \[\033[38;2;255;182;53m\]⏹\
 \[\033[0m\] \
-\[\033[38;2;120;150;255m\]python3.12-uv \
+\[\033[38;2;120;150;255m\]python3.11-uv \
 \[\033[38;2;140;170;255m\]❱ \
 \[\033[0m\] "
 
