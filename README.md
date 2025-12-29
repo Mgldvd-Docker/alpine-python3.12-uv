@@ -9,6 +9,8 @@
   <img src="https://cdn.svgporn.com/logos/docker.svg" height="40" title="docker">
   <img src="https://www.svgrepo.com/show/304556/three-dots.svg" height="30" title="dots">
   <img src="https://cdn.svglogos.dev/logos/python.svg" height="40" title="python">
+  <img src="https://www.svgrepo.com/show/304556/three-dots.svg" height="30" title="dots">
+  <img src="https://svgl.app/library/uv.svg" height="40" title="uv">
 </p>
 
 **Docker + Python 3.12 + uv**
@@ -33,6 +35,7 @@ Single Dockerfile using Alpine and Python 3.12 with uv preinstalled, published b
 - `neovim`
 - `coreutils`
 - `git`
+- `uv` - https://docs.astral.sh/uv/
 
 ### 🔧 Added tooling
 
