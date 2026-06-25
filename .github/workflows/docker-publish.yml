@@ -1,6 +1,8 @@
 name: Publish Docker image
 
 on:
+  schedule:
+    - cron: '0 0 * * 0'
   push:
     branches:
       - deploy/hub
